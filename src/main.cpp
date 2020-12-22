@@ -43,6 +43,8 @@ bool mode2_dispose = false;
 bool mode3_dispose = false;
 bool mode4_dispose = false;
 
+//LF :reemend 15:55
+
 int main()
 {
 	//ChangeImageSize("/home/nvidia/jingweiPicture/00000090.bmp", "/home/nvidia/jingweiPicture/0.bmp", 300, 200);
