@@ -37,7 +37,7 @@ aq::gigeVCamera camera2;   //Object of Gige camera2;
 aq::gigeVCamera camera3;   //Object of Gige camera3;
 aq::gigeVCamera camera4;   //Object of Gige camera4;
 CLog  my_log;
-bool b_log = false;
+bool b_log = true;
 bool model_dispose = false;
 bool mode2_dispose = false;
 bool mode3_dispose = false;
