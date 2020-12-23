@@ -1,0 +1,4 @@
+#ifndef AIDI_DETECTION_H
+#define AIDI_DETECTION_H
+
+#endif // AIDI_DETECTION_H

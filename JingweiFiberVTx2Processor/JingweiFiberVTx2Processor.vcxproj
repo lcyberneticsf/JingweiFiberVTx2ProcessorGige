@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2ecb54bc-afae-4767-b583-a1341c2dccc3}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>JingweiFiberVTx2Processor</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IncludePath>/usr/include/asio;/usr/include/opencv;/usr/include/opencv2;/usr/include/aidi;/usr/include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <IncludePath>/usr/include/asio;/usr/include/opencv;/usr/include/opencv2;/usr/include/aidi;/usr/include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ClCompile Include="src\CLineaCtrl.cpp" />
+    <ClCompile Include="src\CLog.cpp" />
+    <ClCompile Include="src\communicator.cpp" />
+    <ClCompile Include="src\convertBayer.c" />
+    <ClCompile Include="src\cut_code.cpp" />
+    <ClCompile Include="src\detect_recog.cpp" />
+    <ClCompile Include="src\FileUtil_tiff.c" />
+    <ClCompile Include="src\gevbuffile.c" />
+    <ClCompile Include="src\GevFileUtils.c" />
+    <ClCompile Include="src\GevUtils.c" />
+    <ClCompile Include="src\gigevcamera.cpp" />
+    <ClCompile Include="src\inifile.cpp" />
+    <ClCompile Include="src\label.pb.cc" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ParameterSetting.cpp" />
+    <ClCompile Include="src\rw_ini.cpp" />
+    <ClCompile Include="src\soft_check.cpp" />
+    <ClCompile Include="src\VCameraFrame.cpp" />
+    <ClCompile Include="src\VCameraMessage.cpp" />
+    <ClCompile Include="src\VCameraMessageTrans.cpp" />
+    <ClCompile Include="src\VCameraProcessorTypes.cpp" />
+    <ClCompile Include="src\VTx2AidiModel.cpp" />
+    <ClCompile Include="src\X_Display_utils.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\ARM64\Debug\param.ini" />
+    <None Include="bin\ARM64\Release\param.ini" />
+    <None Include="src\MakeFile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CLineaCtrl.h" />
+    <ClInclude Include="src\CLog.h" />
+    <ClInclude Include="src\communicator.h" />
+    <ClInclude Include="src\cordef.h" />
+    <ClInclude Include="src\corenv.h" />
+    <ClInclude Include="src\corposix.h" />
+    <ClInclude Include="src\cpackd.h" />
+    <ClInclude Include="src\cunpackd.h" />
+    <ClInclude Include="src\cut_code.h" />
+    <ClInclude Include="src\detect_recog.h" />
+    <ClInclude Include="src\dynaqueue.h" />
+    <ClInclude Include="src\FileUtil.h" />
+    <ClInclude Include="src\gevapi.h" />
+    <ClInclude Include="src\gevbuffile.h" />
+    <ClInclude Include="src\gevoslib.h" />
+    <ClInclude Include="src\gev_legacy_api.h" />
+    <ClInclude Include="src\gev_linux.h" />
+    <ClInclude Include="src\gigevcamera.h" />
+    <ClInclude Include="src\inifile.h" />
+    <ClInclude Include="src\label.pb.h" />
+    <ClInclude Include="src\ParameterSetting.h" />
+    <ClInclude Include="src\PFNC.h" />
+    <ClInclude Include="src\posixcmn.h" />
+    <ClInclude Include="src\rw_ini.h" />
+    <ClInclude Include="src\SapExUtil.h" />
+    <ClInclude Include="src\SapX11Util.h" />
+    <ClInclude Include="src\soft_check.h" />
+    <ClInclude Include="src\userlib.h" />
+    <ClInclude Include="src\VAsyncIO.h" />
+    <ClInclude Include="src\VCameraCoreApi.h" />
+    <ClInclude Include="src\VCameraEnum.h" />
+    <ClInclude Include="src\VCameraEnumPrivate.h" />
+    <ClInclude Include="src\VCameraFrame.h" />
+    <ClInclude Include="src\VCameraMessage.h" />
+    <ClInclude Include="src\VCameraMessagePrivate.h" />
+    <ClInclude Include="src\VCameraMessageTrans.h" />
+    <ClInclude Include="src\VCameraProcessorApi.h" />
+    <ClInclude Include="src\VCameraProcessorTypes.h" />
+    <ClInclude Include="src\VCameraSession.h" />
+    <ClInclude Include="src\VTx2AidiModel.h" />
+    <ClInclude Include="src\VTx2Session.h" />
+    <ClInclude Include="src\X_Display_utils.h" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+      <AdditionalIncludeDirectories>/usr/local/include/libusb-1.0/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <LibraryDependencies>usb-1.0;X11;Xext;GevApi;CorW32;GCBase_gcc54_v3_0;GenApi_gcc54_v3_0;log4cpp_gcc54_v3_0;Log_gcc54_v3_0;MathParser_gcc54_v3_0;NodeMapData_gcc54_v3_0;XmlParser_gcc54_v3_0;colorprocess;pthread;AQDnnFastDetection;AQDnnSegment;libaidi_vision;boost_atomic;boost_chrono;boost_container;boost_context;boost_coroutine;boost_date_time;boost_filesystem;boost_graph;boost_locale;boost_log;boost_log_setup;boost_math_c99;boost_math_c99f;boost_math_c99l;boost_math_tr1;boost_math_tr1f;boost_math_tr1l;boost_prg_exec_monitor;boost_program_options;boost_python;boost_random;boost_regex;boost_serialization;boost_signals;boost_system;boost_thread;boost_timer;boost_unit_test_framework;boost_wave;boost_wserialization;caffe;crypto;glog;hasp_linux_arm64_34183;jsoncpp;nvcaffe_parser;nvinfer;nvinfer_plugin;nvonnxparser;nvparsers;nvsample_cudaprocess;nvvpi;opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;protobuf;protoc;protobuf-lite;ssl;VCameraCore;VCameraCored;%(LibraryDependencies)</LibraryDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <Link>
+      <LibraryDependencies>X11;Xext;GevApi;CorW32;GCBase_gcc54_v3_0;GenApi_gcc54_v3_0;log4cpp_gcc54_v3_0;Log_gcc54_v3_0;MathParser_gcc54_v3_0;NodeMapData_gcc54_v3_0;XmlParser_gcc54_v3_0;colorprocess;cutcode;pthread;AQDnnClassify;AQDnnFastDetection;libaidi_vision;boost_atomic;boost_chrono;boost_container;boost_context;boost_coroutine;boost_date_time;boost_filesystem;boost_graph;boost_locale;boost_log;boost_log_setup;boost_math_c99;boost_math_c99f;boost_math_c99l;boost_math_tr1;boost_math_tr1f;boost_math_tr1l;boost_prg_exec_monitor;boost_program_options;boost_python;boost_random;boost_regex;boost_serialization;boost_signals;boost_system;boost_thread;boost_timer;boost_unit_test_framework;boost_wave;boost_wserialization;caffe;crypto;glog;hasp_linux_arm64_34183;jsoncpp;nvcaffe_parser;nvinfer;nvinfer_plugin;nvonnxparser;nvparsers;nvsample_cudaprocess;nvvpi;opencv_calib3d;opencv_core;opencv_dnn;opencv_features2d;opencv_flann;opencv_highgui;opencv_imgcodecs;opencv_imgproc;opencv_ml;opencv_objdetect;opencv_photo;opencv_shape;opencv_stitching;opencv_superres;opencv_video;opencv_videoio;opencv_videostab;protobuf;protoc;protobuf-lite;ssl;%(LibraryDependencies)</LibraryDependencies>
+    </Link>
+    <ClCompile>
+      <CppLanguageStandard>c++14</CppLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
