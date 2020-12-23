@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Src">
+      <UniqueIdentifier>{46201037-ec86-4866-8ad3-79872ae9d1df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{91263099-d7a0-45cb-826a-7ed5416636b3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rw_ini.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VCameraFrame.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VCameraMessage.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VCameraProcessorTypes.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VTx2AidiModel.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CLineaCtrl.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gigevcamera.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\convertBayer.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileUtil_tiff.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GevFileUtils.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GevUtils.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\X_Display_utils.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VCameraMessageTrans.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\communicator.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cut_code.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ParameterSetting.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inifile.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gevbuffile.c">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\detect_recog.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CLog.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\label.pb.cc">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\soft_check.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\MakeFile">
+      <Filter>Src</Filter>
+    </None>
+    <None Include="bin\ARM64\Debug\param.ini">
+      <Filter>Src</Filter>
+    </None>
+    <None Include="bin\ARM64\Release\param.ini">
+      <Filter>Src</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\CLineaCtrl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rw_ini.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\userlib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VAsyncIO.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraEnumPrivate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraMessagePrivate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraSession.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VTx2AidiModel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gigevcamera.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraMessageTrans.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\communicator.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VTx2Session.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraCoreApi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraEnum.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraFrame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraMessage.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraProcessorApi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VCameraProcessorTypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cut_code.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ParameterSetting.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\inifile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gevbuffile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cordef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\corenv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\corposix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cpackd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cunpackd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dynaqueue.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FileUtil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gev_linux.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gevapi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gevoslib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PFNC.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\posixcmn.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\X_Display_utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SapExUtil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SapX11Util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\gev_legacy_api.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\detect_recog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CLog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\label.pb.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\soft_check.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
